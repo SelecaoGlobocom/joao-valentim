@@ -1,7 +1,7 @@
 
 # Breath of Fantasy
 
-Breathe of Fantasy simula a luta de bravos guerreiros altamente treinados com base em sua força e energia até que apenas um prevaleça no campo ~ou no console~ de batalha.
+Breath of Fantasy simula a luta de bravos guerreiros altamente treinados com bases em suas forças e energias até que apenas um prevaleça no campo ~ou no console~ de batalha.
 
 
 
@@ -13,7 +13,7 @@ Breathe of Fantasy simula a luta de bravos guerreiros altamente treinados com ba
 2) Após instalado, entre na pasta principal do projeto e depois na pasta `app`.
 
 ```bash
-  cd breath-of-fantasy/app
+  cd /app
 ```
 
 3) Com o Ruby já instalado em sua máquina, para rodar o jogo basta digitar no terminal:
