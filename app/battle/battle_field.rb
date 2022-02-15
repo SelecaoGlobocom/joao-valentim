@@ -26,14 +26,14 @@ class BattleField
   def first_round
     puts "#{@second_warrior.name} atacou #{@first_warrior.name}!"
     
-    return 0 if @first_warrior.energy < 0
+    return if @first_warrior.energy < 0
     @first_warrior.energy -= damage(@second_warrior)
   end
 
   def second_round
     puts "#{@first_warrior.name} atacou #{@second_warrior.name}!"
     
-    return 0 if @second_warrior.energy < 0
+    return if @second_warrior.energy < 0
     @second_warrior.energy -= damage(@first_warrior)
   end
 
