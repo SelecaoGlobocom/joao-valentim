@@ -6,33 +6,19 @@ class BreathOfFantasy
     begin
       puts "Breath of Fantasy"
       puts "================"
-      prepare_warriors
-      start_battle
+      puts "Crie um guerreiro: [Nome] [Energia] [Poder]"
+      @first_warrior  = Warrior.new(warrior_values)
+      puts "Crie seu adversário: [Nome] [Energia] [Poder]"
+      @second_warrior = Warrior.new(warrior_values)
+      BattleField.new(
+        @first_warrior,
+        @second_warrior
+      ).start
     rescue ArgumentError => e
       puts "#{e.message} Tente novamente"
       puts "================"
       BreathOfFantasy.new.call
     end
-  end
-
-  private
-
-  def prepare_warriors
-    puts "Crie um guerreiro: [Nome] [Energia] [Poder]"
-    @first_warrior  = create_warrior
-    puts "Crie seu adversário: [Nome] [Energia] [Poder]"
-    @second_warrior = create_warrior
-  end
-
-  def create_warrior
-    Warrior.new(warrior_values)
-  end
-
-  def start_battle
-    BattleField.new(
-      @first_warrior,
-      @second_warrior
-    ).start
   end
 
   def warrior_values
